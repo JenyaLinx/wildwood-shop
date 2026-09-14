@@ -139,7 +139,7 @@ h1, h2, h3 { color: var(--ink); font-family: var(--title-font); }
 .set__buy { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
 .set__price { display: flex; align-items: baseline; gap: 10px; }
 .set__price span { color: #8d958e; text-decoration: line-through; }
-.set__price strong { color: var(--green-dark); font-family: var(--title-font); font-size: 34px; }
+.set__price strong { color: var(--green-dark); font-family: var(--body-font); font-size: 26px; }
 .set__decor {
   position: absolute;
   z-index: 6;

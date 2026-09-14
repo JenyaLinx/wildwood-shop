@@ -1,0 +1,861 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="WILDWOOD — handmade natural bath, body and hair care inspired by botanical rituals."
+    />
+    <link rel="icon" type="image/png" href="./img/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.6.0/remixicon.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WILDWOOD Natural Spa</title>
+  </head>
+
+  <body>
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#home" class="nav__logo" aria-label="WILDWOOD home">
+          <img src="./img/logo.png" alt="WILDWOOD logo" />
+        </a>
+
+        <div class="nav__menu" id="js-nav-menu">
+          <ul class="nav__list">
+            <li><a href="#home" class="nav__link active-link">HOME</a></li>
+            <li><a href="#about" class="nav__link">ABOUT</a></li>
+            <li><a href="#shop" class="nav__link">SHOP</a></li>
+            <li><a href="#set" class="nav__link">BEST SET</a></li>
+            <li><a href="#contact" class="nav__link">CONTACT</a></li>
+          </ul>
+          <button
+            class="nav__close"
+            id="js-nav-close"
+            type="button"
+            aria-label="Close menu"
+          >
+            <i class="ri-close-line"></i>
+          </button>
+        </div>
+
+        <div class="nav__actions">
+          <button
+            class="nav__cart"
+            id="js-cart-open"
+            type="button"
+            aria-label="Open shopping cart"
+          >
+            <i class="ri-shopping-bag-3-line"></i>
+            <span class="nav__cart-count" id="js-cart-count">0</span>
+          </button>
+          <button
+            class="nav__toggle"
+            id="js-nav-toggle"
+            type="button"
+            aria-label="Open menu"
+          >
+            <i class="ri-menu-3-line"></i>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="home__background">
+          <img
+            src="./img/home-img.webp"
+            alt="WILDWOOD natural spa collection"
+            class="home__background-img"
+          />
+        </div>
+        <div class="home__overlay"></div>
+        <img
+          src="./img/decor-rosemary.png"
+          class="home__decor home__decor--rosemary"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          src="./img/decor-half-orange.png"
+          class="home__decor home__decor--orange"
+          alt=""
+          aria-hidden="true"
+        />
+
+        <div class="home__container container">
+          <div class="home__content">
+            <span class="home__eyebrow">BOTANICAL BATH & BODY</span>
+            <h1 class="home__title">
+              A LITTLE SPA,<br /><span>GROWN BY NATURE.</span>
+            </h1>
+            <p class="home__description">
+              Small-batch soaps, bath treats, body scrubs and solid hair care
+              made for slow, sunlit rituals.
+            </p>
+            <a href="#shop" class="button"
+              >SHOP THE COLLECTION <i class="ri-arrow-right-line"></i
+            ></a>
+            <div class="home__features">
+              <span><i class="ri-leaf-line"></i> Natural inspired</span>
+              <span><i class="ri-hand-heart-line"></i> Small batch</span>
+              <span><i class="ri-recycle-line"></i> Low-waste care</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <div class="about__container container">
+          <div class="section__heading">
+            <span class="section__eyebrow">OUR BOTANICAL STORY</span>
+            <h2 class="section__title">
+              SLOW CARE FOR<br /><span>EVERYDAY RITUALS.</span>
+            </h2>
+            <p class="section__description">
+              WILDWOOD turns simple daily care into a warm, sensory pause — with
+              botanical textures, comforting scents and thoughtful small-batch
+              making.
+            </p>
+          </div>
+
+          <div class="about__grid">
+            <div class="about__image about__image--main">
+              <img
+                src="./img/about-img-1.webp"
+                alt="Handmade WILDWOOD body care production"
+                loading="lazy"
+              />
+              <span class="about__badge">SMALL<br />BATCH</span>
+            </div>
+            <div class="about__content">
+              <p>
+                From dried lavender and rosemary to citrus, coffee and
+                nourishing oils, each product is designed to feel tactile,
+                honest and naturally beautiful.
+              </p>
+              <div class="about__stats">
+                <div><strong>16</strong><span>Botanical products</span></div>
+                <div><strong>4</strong><span>Self-care categories</span></div>
+                <div><strong>1</strong><span>Golden-hour mood</span></div>
+              </div>
+              <div class="about__mosaic">
+                <img
+                  src="./img/about-img-2.webp"
+                  alt="Natural ingredients and handmade spa products"
+                  loading="lazy"
+                />
+                <img
+                  src="./img/about-img-3.webp"
+                  alt="WILDWOOD botanical making process"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="shop section" id="shop">
+        <img
+          src="./img/decor-lavender.png"
+          class="shop__decor shop__decor--lavender"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          src="./img/decor-orange.png"
+          class="shop__decor shop__decor--orange"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="shop__container container">
+          <div class="section__heading">
+            <span class="section__eyebrow">THE COLLECTION</span>
+            <h2 class="section__title">
+              CHOOSE YOUR<br /><span>NATURAL RITUAL.</span>
+            </h2>
+            <p class="section__description">
+              Handmade essentials for bath, body and hair — fresh, tactile and
+              easy to gift.
+            </p>
+          </div>
+
+          <div class="shop__filters" aria-label="Product categories">
+            <button
+              class="shop__filter active-filter"
+              type="button"
+              data-filter="all"
+            >
+              All
+            </button>
+            <button class="shop__filter" type="button" data-filter="soap">
+              Soap
+            </button>
+            <button class="shop__filter" type="button" data-filter="bath">
+              Bath Bombs
+            </button>
+            <button class="shop__filter" type="button" data-filter="scrub">
+              Body Scrubs
+            </button>
+            <button class="shop__filter" type="button" data-filter="hair">
+              Hair Bars
+            </button>
+          </div>
+
+          <div class="shop__grid">
+            <article class="product-card" data-category="soap">
+              <div class="product-card__image">
+                <img
+                  src="./img/lavender-botanical-flower-soap.webp"
+                  alt="Lavender Botanical Soap"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Soap Bar</span>
+                  <h3 class="product-card__title">Lavender Botanical Soap</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£4.50</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Lavender Botanical Soap"
+                    data-price="4.50"
+                    data-image="./img/lavender-botanical-flower-soap.webp"
+                    aria-label="Add Lavender Botanical Soap to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="soap">
+              <div class="product-card__image">
+                <img
+                  src="./img/coffee-scrub-bar.webp"
+                  alt="Coffee Scrub Soap Bar"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Soap Bar</span>
+                  <h3 class="product-card__title">Coffee Scrub Soap Bar</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£4.50</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Coffee Scrub Soap Bar"
+                    data-price="4.50"
+                    data-image="./img/coffee-scrub-bar.webp"
+                    aria-label="Add Coffee Scrub Soap Bar to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="soap">
+              <div class="product-card__image">
+                <img
+                  src="./img/oat-honey-soap.webp"
+                  alt="Oat & Honey Soap"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Soap Bar</span>
+                  <h3 class="product-card__title">Oat & Honey Soap</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£4.25</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Oat & Honey Soap"
+                    data-price="4.25"
+                    data-image="./img/oat-honey-soap.webp"
+                    aria-label="Add Oat & Honey Soap to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="soap">
+              <div class="product-card__image">
+                <img
+                  src="./img/charcoal-detox-soap.webp"
+                  alt="Charcoal Detox Soap"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Soap Bar</span>
+                  <h3 class="product-card__title">Charcoal Detox Soap</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£4.75</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Charcoal Detox Soap"
+                    data-price="4.75"
+                    data-image="./img/charcoal-detox-soap.webp"
+                    aria-label="Add Charcoal Detox Soap to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="bath">
+              <div class="product-card__image">
+                <img
+                  src="./img/citrus-bath-bomb.webp"
+                  alt="Citrus Sunshine Bath Bomb"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Bath Bomb</span>
+                  <h3 class="product-card__title">Citrus Sunshine Bath Bomb</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£4.25</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Citrus Sunshine Bath Bomb"
+                    data-price="4.25"
+                    data-image="./img/citrus-bath-bomb.webp"
+                    aria-label="Add Citrus Sunshine Bath Bomb to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="bath">
+              <div class="product-card__image">
+                <img
+                  src="./img/rose-petal-pink-bomb.webp"
+                  alt="Rose Petal Bath Bomb"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Bath Bomb</span>
+                  <h3 class="product-card__title">Rose Petal Bath Bomb</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£4.25</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Rose Petal Bath Bomb"
+                    data-price="4.25"
+                    data-image="./img/rose-petal-pink-bomb.webp"
+                    aria-label="Add Rose Petal Bath Bomb to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="bath">
+              <div class="product-card__image">
+                <img
+                  src="./img/eucalyptus-mint-bomb.webp"
+                  alt="Eucalyptus Mint Bath Bomb"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Bath Bomb</span>
+                  <h3 class="product-card__title">Eucalyptus Mint Bath Bomb</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£4.25</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Eucalyptus Mint Bath Bomb"
+                    data-price="4.25"
+                    data-image="./img/eucalyptus-mint-bomb.webp"
+                    aria-label="Add Eucalyptus Mint Bath Bomb to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="bath">
+              <div class="product-card__image">
+                <img
+                  src="./img/vanilla-golden- bomb.webp"
+                  alt="Vanilla Golden Bath Bomb"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Bath Bomb</span>
+                  <h3 class="product-card__title">Vanilla Golden Bath Bomb</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£4.50</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Vanilla Golden Bath Bomb"
+                    data-price="4.50"
+                    data-image="./img/vanilla-golden- bomb.webp"
+                    aria-label="Add Vanilla Golden Bath Bomb to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="scrub">
+              <div class="product-card__image">
+                <img
+                  src="./img/strawberry-sugar-scrub.webp"
+                  alt="Strawberry Sugar Scrub"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Body Scrub</span>
+                  <h3 class="product-card__title">Strawberry Sugar Scrub</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£9.50</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Strawberry Sugar Scrub"
+                    data-price="9.50"
+                    data-image="./img/strawberry-sugar-scrub.webp"
+                    aria-label="Add Strawberry Sugar Scrub to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="scrub">
+              <div class="product-card__image">
+                <img
+                  src="./img/coffee-scrub.webp"
+                  alt="Coffee Body Scrub"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Body Scrub</span>
+                  <h3 class="product-card__title">Coffee Body Scrub</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£9.50</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Coffee Body Scrub"
+                    data-price="9.50"
+                    data-image="./img/coffee-scrub.webp"
+                    aria-label="Add Coffee Body Scrub to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="scrub">
+              <div class="product-card__image">
+                <img
+                  src="./img/nuts-scrub.webp"
+                  alt="Nut & Brown Sugar Scrub"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Body Scrub</span>
+                  <h3 class="product-card__title">Nut & Brown Sugar Scrub</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£9.75</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Nut & Brown Sugar Scrub"
+                    data-price="9.75"
+                    data-image="./img/nuts-scrub.webp"
+                    aria-label="Add Nut & Brown Sugar Scrub to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="scrub">
+              <div class="product-card__image">
+                <img
+                  src="./img/coconut-salt-scrub.webp"
+                  alt="Coconut Salt Scrub"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Body Scrub</span>
+                  <h3 class="product-card__title">Coconut Salt Scrub</h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£9.50</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Coconut Salt Scrub"
+                    data-price="9.50"
+                    data-image="./img/coconut-salt-scrub.webp"
+                    aria-label="Add Coconut Salt Scrub to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="scrub">
+              <div class="product-card__image">
+                <img
+                  src="./img/citrus-anticellulite-scrub.webp"
+                  alt="Citrus Anti-Cellulite Scrub"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Body Scrub</span>
+                  <h3 class="product-card__title">
+                    Citrus Anti-Cellulite Scrub
+                  </h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£9.75</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Citrus Anti-Cellulite Scrub"
+                    data-price="9.75"
+                    data-image="./img/citrus-anticellulite-scrub.webp"
+                    aria-label="Add Citrus Anti-Cellulite Scrub to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="hair">
+              <div class="product-card__image">
+                <img
+                  src="./img/nettle-rosemary-shampoo-bar.webp"
+                  alt="Nettle & Rosemary Shampoo Bar"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Hair Bar</span>
+                  <h3 class="product-card__title">
+                    Nettle & Rosemary Shampoo Bar
+                  </h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£5.75</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Nettle & Rosemary Shampoo Bar"
+                    data-price="5.75"
+                    data-image="./img/nettle-rosemary-shampoo-bar.webp"
+                    aria-label="Add Nettle & Rosemary Shampoo Bar to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="hair">
+              <div class="product-card__image">
+                <img
+                  src="./img/coconut-hydrating-shampoo.webp"
+                  alt="Coconut Hydrating Shampoo Bar"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Hair Bar</span>
+                  <h3 class="product-card__title">
+                    Coconut Hydrating Shampoo Bar
+                  </h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£5.75</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Coconut Hydrating Shampoo Bar"
+                    data-price="5.75"
+                    data-image="./img/coconut-hydrating-shampoo.webp"
+                    aria-label="Add Coconut Hydrating Shampoo Bar to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+            <article class="product-card" data-category="hair">
+              <div class="product-card__image">
+                <img
+                  src="./img/lavender-solid-conditioner-bar.webp"
+                  alt="Lavender Solid Conditioner Bar"
+                  loading="lazy"
+                />
+              </div>
+              <div class="product-card__content">
+                <div>
+                  <span class="product-card__type">Hair Bar</span>
+                  <h3 class="product-card__title">
+                    Lavender Solid Conditioner Bar
+                  </h3>
+                </div>
+                <div class="product-card__bottom">
+                  <span class="product-card__price">£7.50</span>
+                  <button
+                    class="product-card__button js-add-to-cart"
+                    type="button"
+                    data-title="Lavender Solid Conditioner Bar"
+                    data-price="7.50"
+                    data-image="./img/lavender-solid-conditioner-bar.webp"
+                    aria-label="Add Lavender Solid Conditioner Bar to cart"
+                  >
+                    <i class="ri-shopping-bag-4-line"></i>
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="set section" id="set">
+        <img
+          src="./img/decor-rosemary.png"
+          class="set__decor set__decor--rosemary"
+          alt=""
+          aria-hidden="true"
+        />
+        <img
+          src="./img/decor-half-orange.png"
+          class="set__decor set__decor--orange"
+          alt=""
+          aria-hidden="true"
+        />
+        <div class="set__container container">
+          <div class="set__image">
+            <img
+              src="./img/best-set.webp"
+              alt="WILDWOOD Golden Hour Best Set"
+              loading="lazy"
+            />
+            <span class="set__label">SAVE 15%</span>
+          </div>
+          <div class="set__content">
+            <span class="section__eyebrow">THE BEST SET</span>
+            <h2 class="section__title">
+              GOLDEN HOUR<br /><span>SPA SET</span>
+            </h2>
+            <p class="set__description">
+              A bright three-step ritual with our Strawberry Sugar Scrub, Nettle
+              & Rosemary Shampoo Bar and Citrus Sunshine Bath Bomb.
+            </p>
+            <ul class="set__list">
+              <li><i class="ri-check-line"></i> Strawberry Sugar Scrub</li>
+              <li>
+                <i class="ri-check-line"></i> Nettle & Rosemary Shampoo Bar
+              </li>
+              <li><i class="ri-check-line"></i> Citrus Sunshine Bath Bomb</li>
+              <li><i class="ri-gift-line"></i> Ready for gifting</li>
+            </ul>
+            <div class="set__buy">
+              <div class="set__price">
+                <span>£19.50</span><strong>£16.50</strong>
+              </div>
+              <button
+                class="button js-add-to-cart"
+                type="button"
+                data-title="Golden Hour Spa Set"
+                data-price="16.50"
+                data-image="./img/best-set.webp"
+              >
+                ADD SET TO CART <i class="ri-shopping-bag-3-line"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="contact__container container">
+          <div class="contact__card">
+            <span class="section__eyebrow">STAY CLOSE TO NATURE</span>
+            <h2 class="section__title">
+              A SOFTER WAY<br /><span>TO RESET.</span>
+            </h2>
+            <p>
+              Questions about a product, gifting or your order? We would love to
+              hear from you.
+            </p>
+            <div class="contact__links">
+              <a href="mailto:hello@wildwoodshop.co.uk"
+                ><i class="ri-mail-line"></i> hello@wildwoodshop.co.uk</a
+              >
+              <a href="#" aria-label="Instagram"
+                ><i class="ri-instagram-line"></i> Instagram</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__container container">
+        <img src="./img/logo.png" alt="WILDWOOD" class="footer__logo" />
+        <p>Natural care for warm, slow rituals.</p>
+        <p>© 2026 WILDWOOD Shop</p>
+      </div>
+    </footer>
+
+    <div class="cart-overlay" id="js-cart-overlay"></div>
+    <aside class="cart" id="js-cart" aria-label="Shopping cart">
+      <div class="cart__header">
+        <div>
+          <span class="section__eyebrow">YOUR SELECTION</span>
+          <h2>Your cart</h2>
+        </div>
+        <button
+          class="cart__close"
+          id="js-cart-close"
+          type="button"
+          aria-label="Close cart"
+        >
+          <i class="ri-close-line"></i>
+        </button>
+      </div>
+      <div class="cart__content" id="js-cart-content"></div>
+      <div class="cart__footer">
+        <div class="cart__total">
+          <span>Total</span><strong id="js-cart-total">£0.00</strong>
+        </div>
+        <button
+          class="button cart__checkout"
+          id="js-checkout-open"
+          type="button"
+        >
+          CHECKOUT <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+    </aside>
+
+    <div class="checkout-overlay" id="js-checkout-overlay"></div>
+    <section class="checkout-modal" id="js-checkout-modal" aria-hidden="true">
+      <div class="checkout-modal__container">
+        <button
+          class="checkout-modal__close"
+          id="js-checkout-close"
+          type="button"
+          aria-label="Close checkout"
+        >
+          <i class="ri-close-line"></i>
+        </button>
+        <div class="checkout-modal__content" id="js-checkout-form-content">
+          <span class="section__eyebrow">FINAL STEP</span>
+          <h2>Complete your order</h2>
+          <p>Enter your details and we’ll prepare your WILDWOOD order.</p>
+          <form class="checkout-form" id="js-checkout-form">
+            <label
+              >Name *<input
+                type="text"
+                name="name"
+                placeholder="Your full name"
+                required
+            /></label>
+            <label
+              >Phone *<input
+                type="tel"
+                name="phone"
+                placeholder="+44..."
+                required
+            /></label>
+            <label
+              >Email *<input
+                type="email"
+                name="email"
+                placeholder="you@email.com"
+                required
+            /></label>
+            <label
+              >Comment<textarea
+                name="comment"
+                placeholder="Add a comment to your order (optional)"
+                rows="3"
+              ></textarea>
+            </label>
+            <button class="button checkout-form__button" type="submit">
+              PLACE ORDER <i class="ri-arrow-right-line"></i>
+            </button>
+          </form>
+        </div>
+        <div class="checkout-success" id="js-checkout-success">
+          <div class="checkout-success__icon">
+            <i class="ri-check-line"></i>
+          </div>
+          <span class="section__eyebrow">THANK YOU</span>
+          <h2>Order received</h2>
+          <p>Your WILDWOOD order has been created successfully.</p>
+          <button class="button" id="js-checkout-finish" type="button">
+            BACK TO SHOP
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/main.js"></script>
+  </body>
+</html>

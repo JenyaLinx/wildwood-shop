@@ -369,8 +369,8 @@ h1, h2, h3 { color: var(--ink); font-family: var(--title-font); }
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-top: 18px;
-  font-size: 12px;
+  margin-top: 10px;
+  font-size: 10px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.65);
 }
